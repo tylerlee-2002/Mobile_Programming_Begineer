@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/first_num"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/first_num"/>
+
+    <TextView
+        android:id="@+id/second_num"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/first_num"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/second_num"/>
+
+    <EditText
+        android:id="@+id/first_num_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="60dp"
+        android:layout_toEndOf="@id/first_num"
+        android:autofillHints="First Number"
+        android:ems="10"
+        android:hint="@string/first_num_ed"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/second_num_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_num_editText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="60dp"
+        android:layout_toEndOf="@id/second_num"
+        android:autofillHints="Second Number"
+        android:ems="10"
+        android:hint="@string/second_num_ed"
+        android:inputType="number"/>
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="290dp"
+            android:layout_marginBottom="278dp"
+            android:text="@string/add_btn" />
+
+</RelativeLayout>
